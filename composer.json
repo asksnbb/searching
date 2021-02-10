@@ -30,18 +30,16 @@
         "preferred-install": "dist"
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "3.0-dev"
-        },
-        "laravel": {
-            "providers": [
-                "Monogram\\Searchy\\SearchyServiceProvider"
-            ],
-            "aliases": {
-                "Monogram": "Monogram\\Monogram\\Facades\\Monogram"
-            }
+    "laravel": {
+        "providers": [
+            "Monogram\\Searchy\\SearchyServiceProvider"
+        ],
+        "aliases": {
+            "Monogram": "Monogram\\Monogram\\Facades\\Monogram"
         }
-    },
+    }
+},
+
     "minimum-stability": "dev",
     "prefer-stable": true
 }
