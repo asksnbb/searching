@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy\Matchers;
+namespace Monogram\Searchy\Matchers;
 
 /**
  * Matches strings that include all the characters in the search relatively position within the string.

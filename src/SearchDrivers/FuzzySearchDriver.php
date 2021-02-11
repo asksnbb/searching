@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy\SearchDrivers;
+namespace Monogram\Searchy\SearchDrivers;
 
 class FuzzySearchDriver extends BaseSearchDriver
 {
@@ -8,13 +8,13 @@ class FuzzySearchDriver extends BaseSearchDriver
      * @var array
      */
     protected $matchers = [
-        \TomLingham\Searchy\Matchers\ExactMatcher::class                 => 100,
-        \TomLingham\Searchy\Matchers\StartOfStringMatcher::class         => 50,
-        \TomLingham\Searchy\Matchers\AcronymMatcher::class               => 42,
-        \TomLingham\Searchy\Matchers\ConsecutiveCharactersMatcher::class => 40,
-        \TomLingham\Searchy\Matchers\StartOfWordsMatcher::class          => 35,
-        \TomLingham\Searchy\Matchers\StudlyCaseMatcher::class            => 32,
-        \TomLingham\Searchy\Matchers\InStringMatcher::class              => 30,
-        \TomLingham\Searchy\Matchers\TimesInStringMatcher::class         => 8,
+        \Monogram\Searchy\Matchers\ExactMatcher::class                 => 100,
+        \Monogram\Searchy\Matchers\StartOfStringMatcher::class         => 50,
+        \Monogram\Searchy\Matchers\AcronymMatcher::class               => 42,
+        \Monogram\Searchy\Matchers\ConsecutiveCharactersMatcher::class => 40,
+        \Monogram\Searchy\Matchers\StartOfWordsMatcher::class          => 35,
+        \Monogram\Searchy\Matchers\StudlyCaseMatcher::class            => 32,
+        \Monogram\Searchy\Matchers\InStringMatcher::class              => 30,
+        \Monogram\Searchy\Matchers\TimesInStringMatcher::class         => 8,
 ];
 }

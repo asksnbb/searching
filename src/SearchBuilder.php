@@ -1,9 +1,9 @@
 <?php
 
-namespace TomLingham\Searchy;
+namespace Monogram\Searchy;
 
 use Illuminate\Config\Repository;
-use TomLingham\Searchy\SearchDrivers\FuzzySearchDriver;
+use Monogram\Searchy\SearchDrivers\FuzzySearchDriver;
 
 /**
  * @property mixed driverName

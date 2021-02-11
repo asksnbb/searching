@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy\Matchers;
+namespace Monogram\Searchy\Matchers;
 
 /**
  * Matches a string based on how many times the search string appears inside the string

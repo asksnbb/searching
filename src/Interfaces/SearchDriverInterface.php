@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy\Interfaces;
+namespace Monogram\Searchy\Interfaces;
 
 interface SearchDriverInterface
 {

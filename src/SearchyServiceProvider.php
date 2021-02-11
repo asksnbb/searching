@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy;
+namespace Monogram\Searchy;
 
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Foundation\Application as LaravelApplication;

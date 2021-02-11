@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy\Facades;
+namespace Monogram\Searchy\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
