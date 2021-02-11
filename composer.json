@@ -1,5 +1,5 @@
 {
-    "name": "monogram/searching",
+    "name": "monogram/searchy",
     "description": "",
     "keywords": ["laravel","search","fuzzy"],
     "license": "MIT",
@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Monogram\\Searching\\": "src/"
+            "Monogram\\Searchy\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Monogram\\Tests\\Searching\\": "tests/"
+            "Monogram\\Tests\\Searchy\\": "tests/"
         }
     },
     "config": {
@@ -32,7 +32,7 @@
     "extra": {
     "laravel": {
         "providers": [
-            "Monogram\\Searching\\SearchyServiceProvider"
+            "Monogram\\Searchy\\SearchyServiceProvider"
         ],
         "aliases": {
             "Monogram": "Monogram\\Monogram\\Facades\\Monogram"
