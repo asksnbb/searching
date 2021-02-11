@@ -32,7 +32,7 @@
     "extra": {
     "laravel": {
         "providers": [
-            "Monogram\\Searching\\SearchServiceProvider"
+            "Monogram\\Searching\\SearchyServiceProvider"
         ],
         "aliases": {
             "Monogram": "Monogram\\Monogram\\Facades\\Monogram"
