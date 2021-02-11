@@ -9,19 +9,19 @@ return [
     'drivers' => [
 
         'fuzzy' => [
-            'class' => 'TomLingham\Searchy\SearchDrivers\FuzzySearchDriver',
+            'class' => 'Monogram\Searchy\SearchDrivers\FuzzySearchDriver',
         ],
 
         'ufuzzy' => [
-            'class' => 'TomLingham\Searchy\SearchDrivers\FuzzySearchUnicodeDriver',
+            'class' => 'Monogram\Searchy\SearchDrivers\FuzzySearchUnicodeDriver',
         ],
 
         'simple' => [
-            'class' => 'TomLingham\Searchy\SearchDrivers\SimpleSearchDriver',
+            'class' => 'Monogram\Searchy\SearchDrivers\SimpleSearchDriver',
         ],
 
         'levenshtein' => [
-            'class' => 'TomLingham\Searchy\SearchDrivers\LevenshteinSearchDriver',
+            'class' => 'Monogram\Searchy\SearchDrivers\LevenshteinSearchDriver',
         ],
 
     ],
