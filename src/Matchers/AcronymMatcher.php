@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searching\Matchers;
+namespace Monogram\Searching\Matchers;
 
 /**
  * Matches strings for Acronym 'like' matches but does NOT return Studly Case Matches.
