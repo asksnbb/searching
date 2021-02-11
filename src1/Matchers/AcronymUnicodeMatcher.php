@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy\Matchers;
+namespace Monogram\Searching\Matchers;
 
 /**
  * Matches strings for Acronym 'like' matches but does NOT return Studly Case Matches.
@@ -9,7 +9,7 @@ namespace TomLingham\Searchy\Matchers;
  *
  * Class AcronymMatcher
  */
-class AcronymMatcher extends BaseMatcher
+class AcronymUnicodeMatcher extends BaseMatcher
 {
     /**
      * @var string
@@ -23,8 +23,9 @@ class AcronymMatcher extends BaseMatcher
      */
     public function formatSearchString($searchString)
     {
-        $searchString = preg_replace('/[^0-9a-zA-Z]/', '', $searchString);
+        $results = [];
+        preg_match_all('/./u', mb_strtoupper($searchString, 'UTF-8'), $results);
 
-        return implode('% ', str_split(strtoupper($searchString))).'%';
+        return implode('% ', $results[0]).'%';
     }
 }

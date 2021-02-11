@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy\Matchers;
+namespace Monogram\Searching\Matchers;
 
 /**
  * Matches an exact string and applies a high multiplier to bring any exact matches to the top

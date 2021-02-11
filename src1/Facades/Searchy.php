@@ -1,13 +1,13 @@
 <?php
 
-namespace TomLingham\Searchy\Facades;
+namespace Monogram\Searching\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Searchy facade for the Laravel framework.
  */
-class Searchy extends Facade
+class Searching extends Facade
 {
     /**
      * Get the registered component.
@@ -16,6 +16,6 @@ class Searchy extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'searchy';
+        return 'searching';
     }
 }

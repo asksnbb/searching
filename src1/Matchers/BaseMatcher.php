@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy\Matchers;
+namespace Monogram\Searching\Matchers;
 
 use TomLingham\Searchy\Interfaces\MatcherInterface;
 

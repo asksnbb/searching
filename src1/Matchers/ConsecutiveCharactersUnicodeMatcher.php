@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy\Matchers;
+namespace Monogram\Searching\Matchers;
 
 /**
  * Matches strings that include all the characters in the search relatively position within the string.
@@ -10,7 +10,7 @@ namespace TomLingham\Searchy\Matchers;
  *
  * Class ConsecutiveCharactersMatcher
  */
-class ConsecutiveCharactersMatcher extends BaseMatcher
+class ConsecutiveCharactersUnicodeMatcher extends BaseMatcher
 {
     /**
      * @var string
@@ -24,9 +24,10 @@ class ConsecutiveCharactersMatcher extends BaseMatcher
      */
     public function formatSearchString($searchString)
     {
-        $searchString = preg_replace('/[^0-9a-zA-Z]/', '', $searchString);
+        $results = [];
+        preg_match_all('/./u', $searchString, $results);
 
-        return '%'.implode('%', str_split($searchString)).'%';
+        return '%'.implode('%', $results[0]).'%';
     }
 
     /**

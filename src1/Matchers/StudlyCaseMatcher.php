@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy\Matchers;
+namespace Monogram\Searching\Matchers;
 
 /**
  * Matches Studly Case strings using the first letters of the words only.

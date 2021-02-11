@@ -1,6 +1,6 @@
 <?php
 
-namespace TomLingham\Searchy\Matchers;
+namespace Monogram\Searching\Matchers;
 
 /**
  * Matches Studly Case strings using the first letters of the words only.
@@ -9,7 +9,7 @@ namespace TomLingham\Searchy\Matchers;
  *
  * Class StudlyCaseMatcher
  */
-class StudlyCaseMatcher extends BaseMatcher
+class StudlyCaseUnicodeMatcher extends BaseMatcher
 {
     /**
      * @var string
@@ -23,9 +23,10 @@ class StudlyCaseMatcher extends BaseMatcher
      */
     public function formatSearchString($searchString)
     {
-        $searchString = preg_replace('/[^0-9a-zA-Z]/', '', $searchString);
+        $results = [];
+        preg_match_all('/./u', mb_strtoupper($searchString, 'UTF-8'), $results);
 
-        return implode('%', str_split(strtoupper($searchString))).'%';
+        return implode('%', $results[0]).'%';
     }
 
     public function buildQueryString($column, $searchString)
